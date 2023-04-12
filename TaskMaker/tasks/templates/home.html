@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+
+{% block content %}
+{% if user.is_authenticated %}
+<main class="container py-5">
+    <section class="card card-body">
+        <h1 class="text-center text-secondary" style="font-family: montserrat extrabold; text-transform: uppercase;">T<span style="color:#E04343;">ask</span>Ma<span style="color:#FFE800">K</span><span>er</span></h1>
+        <p style="font-family: montserrat">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ullam eaque, esse dicta odit amet ipsum fugit. Officia doloribus magnam ut accusamus perferendis, voluptas adipisci itaque nam debitis cum eveniet quisquam dignissimos asperiores eligendi accusantium. Minus repellat sapiente at tempore ad, dolorum laudantium, eum quidem deserunt, autem repudiandae porro rem enim ea aut sunt? Voluptates assumenda repellendus excepturi sunt! Obcaecati omnis libero sequi minima veritatis aperiam tempore rem, unde, accusamus nesciunt dolor voluptatibus voluptatum alias nostrum. Nesciunt quos sapiente nam dolor maiores id, aliquid voluptas, obcaecati nihil suscipit cupiditate dolorum esse doloribus nulla aut magnam dolores, facere possimus ab ullam!</p>
+{% else %}
+
+<main class="container py-5">
+    <section class="card card-body">
+        <h1 class="text-center text-secondary" style="font-family: montserrat extrabold; text-transform: uppercase;">T<span style="color:#E04343;">ask</span>Ma<span style="color:#FFE800">K</span><span>er</span></h1>
+        <p style="font-family: montserrat">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ullam eaque, esse dicta odit amet ipsum fugit. Officia doloribus magnam ut accusamus perferendis, voluptas adipisci itaque nam debitis cum eveniet quisquam dignissimos asperiores eligendi accusantium. Minus repellat sapiente at tempore ad, dolorum laudantium, eum quidem deserunt, autem repudiandae porro rem enim ea aut sunt? Voluptates assumenda repellendus excepturi sunt! Obcaecati omnis libero sequi minima veritatis aperiam tempore rem, unde, accusamus nesciunt dolor voluptatibus voluptatum alias nostrum. Nesciunt quos sapiente nam dolor maiores id, aliquid voluptas, obcaecati nihil suscipit cupiditate dolorum esse doloribus nulla aut magnam dolores, facere possimus ab ullam!</p>
+
+        <div class="text-center">
+            <a class="btn btn-secondary" style="font-family: montserrat" href="/signin/">
+                Signin
+            </a>
+            <a class="btn btn-dark" style="font-family: montserrat" href="/signup/">
+                Signup
+            </a>
+        </div>
+       
+
+    </section>
+</main>
+{% endif %}
+{% endblock %}
+
+</body>
+</html>
+    
